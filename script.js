@@ -1,5 +1,54 @@
 "use strict";
 const portfolioProjects = {
+  "realtime-weather": {
+    "name": "Real-Time Weather",
+    "chip": "Full-stack · Cloud",
+    "blurb": "A legacy C# WinForms weather app modernised into a full-stack web application with live, location-aware forecasts, applying the SDLC from requirements through cloud deployment.",
+    "bullets": [
+      "Built a RESTful backend with ASP.NET Core Web API (.NET 10) using dependency injection, typed HttpClient, async/await, input validation and ProblemDetails error responses.",
+      "Integrated Open-Meteo and OpenStreetMap Nominatim APIs, and wrote a C# astronomy module for moonrise, moonset and moon phase.",
+      "Added in-memory caching, rate limiting, a thread-safe request throttle and GPS rounding to about 1 km for privacy.",
+      "Developed a React and TypeScript frontend with automatic geolocation, a live clock, auto-refresh and an SVG sun/moon tracker, deployed to Azure App Service."
+    ],
+    "stack": [
+      "C#",
+      ".NET 10",
+      "ASP.NET Core Web API",
+      "React",
+      "TypeScript",
+      "Vite",
+      "IMemoryCache",
+      "Microsoft Azure App Service"
+    ],
+    "impact": "Legacy desktop app modernised into a cached, rate-limited cloud web application on Microsoft Azure.",
+    "demo": "https://realtime-weather-calvin-hqajgba4g9hbfpeg.southafricanorth-01.azurewebsites.net/",
+    "code": "https://github.com/Calvin527/Real-Time-Weather"
+  },
+  "maroka-inventory": {
+    "name": "Maroka Smart Inventory",
+    "chip": "Full-stack · Business",
+    "blurb": "A secure inventory and business management system for stock tracking, low-stock alerts, order processing, customers, suppliers, reporting and an admin dashboard.",
+    "bullets": [
+      "Designed a layered Spring Boot 3 architecture exposing 41 REST endpoints, documented with OpenAPI/Swagger.",
+      "Secured every endpoint with stateless JWT authentication, BCrypt password hashing and role-based access control.",
+      "Ensured data integrity with transactional order processing, optimistic locking and a full stock audit trail.",
+      "Wrote 16 automated tests with JUnit 5 and Mockito; deployed with Docker on Render and Neon PostgreSQL."
+    ],
+    "stack": [
+      "Java 21",
+      "Spring Boot 3",
+      "Spring Security",
+      "JPA/Hibernate",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "Docker",
+      "Render"
+    ],
+    "impact": "41 REST endpoints, role-based security and optimistic locking that prevents overselling.",
+    "demo": "https://maroka-inventory-system-1.onrender.com/",
+    "code": "https://github.com/Calvin527/Maroka-Inventory-System"
+  },
   "taxi-move": {
     "name": "TAXI MOVE",
     "chip": "Full-stack · Mobility",
