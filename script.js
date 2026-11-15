@@ -1,5 +1,29 @@
 "use strict";
 const portfolioProjects = {
+  "maroka-physio": {
+    "name": "Maroka Physio Practice",
+    "chip": "Full-stack · Healthcare",
+    "blurb": "An appointment and client management platform for a physiotherapy practice. Patients book online without an account, and staff manage bookings, practitioners and patients from an admin dashboard.",
+    "bullets": [
+      "Built with C#, ASP.NET Core 10 Razor Pages and PostgreSQL, using separate data access, business service and page layers, plus an availability engine based on working hours, time off and the practice's time zone.",
+      "Prevented double booking with a PostgreSQL exclusion constraint on overlapping time ranges, verified by sending 15 simultaneous requests for one slot.",
+      "Delivered reliable email notifications through a transactional outbox and a background worker using the Brevo API with retries and exponential back-off.",
+      "Secured the system with HMAC-signed booking links, passwordless email sign-in, PBKDF2 password hashing, rate limiting and a strict Content Security Policy, in line with POPIA."
+    ],
+    "stack": [
+      "C#",
+      ".NET 10",
+      "ASP.NET Core Razor Pages",
+      "PostgreSQL",
+      "Npgsql",
+      "Brevo email API",
+      "Microsoft Azure App Service",
+      "Neon"
+    ],
+    "impact": "No double bookings: of 15 simultaneous requests for one slot, exactly one succeeded.",
+    "demo": "https://maroka-physio-c0anabfvg0ekbte6.southafricanorth-01.azurewebsites.net/",
+    "code": "https://github.com/Calvin527/maroka-physio-practice"
+  },
   "realtime-weather": {
     "name": "Real-Time Weather",
     "chip": "Full-stack · Cloud",
@@ -18,7 +42,8 @@ const portfolioProjects = {
       "TypeScript",
       "Vite",
       "IMemoryCache",
-      "Microsoft Azure App Service"
+      "Microsoft Azure App Service",
+      "CI/CD pipeline"
     ],
     "impact": "Legacy desktop app modernised into a cached, rate-limited cloud web application on Microsoft Azure.",
     "demo": "https://realtime-weather-calvin-hqajgba4g9hbfpeg.southafricanorth-01.azurewebsites.net/",

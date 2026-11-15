@@ -16,7 +16,7 @@ You can alternatively use the VS Code Live Server extension, but it's optional.
 
 - Mobile-responsive layout and navigation
 - Your graduation photograph
-- All eight selected projects with project categories and case studies
+- All nine selected projects with project categories and case studies
 - Direct project demo and repository links where provided in your CVs
 - Software engineering and AI/ML project filters
 - Codveda Technologies machine learning internship
@@ -31,6 +31,7 @@ Put each picture into `assets/projects/` with the **exact filename** below. Use 
 
 | Project | Screenshot filename | Status |
 |---|---|---|
+| Maroka Physio Practice | `maroka-physio.jpg` | Space reserved |
 | Real-Time Weather | `realtime-weather.jpg` | Space reserved |
 | Maroka Smart Inventory | `maroka-inventory.jpg` | Space reserved |
 | TAXI MOVE | `taxi-move.jpg` | Space reserved |
